@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-08T22:07:41.538171" rpa="false" schemaversion="5">
+<suite id="s1" name="Form-React" source="D:\valiation01\myrobot\form-react.robot">
+<test id="s1-t1" name="Fill Registration Form" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:41.974530" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T22:07:41.973984" elapsed="10.876092"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-08T22:07:52.870067" elapsed="0.278298"/>
+</kw>
+<kw name="Input TH Information">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:53.151361" level="INFO">Selecting options from selection list 'id=nameTitleTha' by value นางสาว.</msg>
+<arg>id=nameTitleTha</arg>
+<arg>นางสาว</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T22:07:53.150363" elapsed="0.380782"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:53.532151" level="INFO">Typing text 'พิมพกานต์' into text field 'id=firstnameTha'.</msg>
+<arg>id=firstnameTha</arg>
+<arg>พิมพกานต์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:07:53.532151" elapsed="0.543682"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:54.075833" level="INFO">Typing text 'คูเจริญศรีจันทร์' into text field 'id=lastnameTha'.</msg>
+<arg>id=lastnameTha</arg>
+<arg>คูเจริญศรีจันทร์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:07:54.075833" elapsed="0.488553"/>
+</kw>
+<status status="PASS" start="2024-04-08T22:07:53.150363" elapsed="1.414023"/>
+</kw>
+<kw name="Input EN Information">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:54.566402" level="INFO">Selecting options from selection list 'id=nameTitleEng' by value Ms..</msg>
+<arg>id=nameTitleEng</arg>
+<arg>Ms.</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T22:07:54.566402" elapsed="0.164763"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:54.732162" level="INFO">Typing text 'Pimpakarn' into text field 'id=firstnameEng'.</msg>
+<arg>id=firstnameEng</arg>
+<arg>Pimpakarn</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:07:54.731165" elapsed="0.380778"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:55.112943" level="INFO">Typing text 'Kucharoensrichan' into text field 'id=lastnameEng'.</msg>
+<arg>id=lastnameEng</arg>
+<arg>Kucharoensrichan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:07:55.111943" elapsed="0.686029"/>
+</kw>
+<status status="PASS" start="2024-04-08T22:07:54.565383" elapsed="1.232589"/>
+</kw>
+<kw name="Input Birthday">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:55.803968" level="INFO">Selecting options from selection list 'id=birthDate' by value 26.</msg>
+<arg>id=birthDate</arg>
+<arg>26</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T22:07:55.802968" elapsed="0.279844"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:56.084808" level="INFO">Selecting options from selection list 'id=birthMonth' by label มิถุนายน.</msg>
+<arg>id=birthMonth</arg>
+<arg>มิถุนายน</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-04-08T22:07:56.083809" elapsed="0.359385"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:56.444193" level="INFO">Selecting options from selection list 'id=birthYear' by label 2546.</msg>
+<arg>id=birthYear</arg>
+<arg>2546</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-04-08T22:07:56.443194" elapsed="0.240865"/>
+</kw>
+<status status="PASS" start="2024-04-08T22:07:55.801969" elapsed="0.882090"/>
+</kw>
+<kw name="Input ID Card">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:56.689057" level="INFO">Typing text '1234567891234' into text field 'id=idCard'.</msg>
+<arg>id=idCard</arg>
+<arg>1234567891234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:07:56.689057" elapsed="0.563719"/>
+</kw>
+<status status="PASS" start="2024-04-08T22:07:56.688055" elapsed="0.564721"/>
+</kw>
+<kw name="Input Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:57.254773" level="INFO">Typing text 'Password123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Password123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:07:57.254773" elapsed="0.471736"/>
+</kw>
+<status status="PASS" start="2024-04-08T22:07:57.253774" elapsed="0.472735"/>
+</kw>
+<kw name="Input Phone Number">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:57.731501" level="INFO">Typing text '0624201938' into text field 'id=mobile'.</msg>
+<arg>id=mobile</arg>
+<arg>0624201938</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:07:57.731501" elapsed="0.399770"/>
+</kw>
+<status status="PASS" start="2024-04-08T22:07:57.730504" elapsed="0.401768"/>
+</kw>
+<kw name="Input Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:58.134268" level="INFO">Typing text '654259009@webmail.npru.ac.th' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>654259009@webmail.npru.ac.th</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:07:58.134268" elapsed="0.895330"/>
+</kw>
+<status status="PASS" start="2024-04-08T22:07:58.133270" elapsed="0.896328"/>
+</kw>
+<kw name="Click Checkbox">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:07:59.034594" level="INFO">Clicking element 'id=accept'.</msg>
+<msg time="2024-04-08T22:08:00.386341" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T22:08:00.386341" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (339, 666)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</msg>
+<arg>id=accept</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-08T22:07:59.034594" elapsed="1.357744">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (339, 666)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</kw>
+<status status="FAIL" start="2024-04-08T22:07:59.032597" elapsed="1.360740">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (339, 666)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</kw>
+<kw name="Click Submit Button">
+<status status="NOT RUN" start="2024-04-08T22:08:00.394317" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Successfully submitted!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-08T22:08:00.395316" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-04-08T22:08:00.395316" elapsed="0.001000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T22:07:41.971811" elapsed="18.425053">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (339, 666)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</test>
+<test id="s1-t2" name="Check Invalid Name TH" line="25">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:08:00.412029" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T22:08:00.410030" elapsed="17.998492"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-08T22:08:18.491476" elapsed="0.416311"/>
+</kw>
+<kw name="Input Invalid TH Information">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:08:18.920776" level="INFO">Typing text 'pimpakarn' into text field 'id=firstnameTha'.</msg>
+<arg>id=firstnameTha</arg>
+<arg>pimpakarn</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:08:18.920776" elapsed="1.060033"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:08:19.981811" level="INFO">Typing text 'คูเจริญศรีจันทร์' into text field 'id=lastnameTha'.</msg>
+<arg>id=lastnameTha</arg>
+<arg>คูเจริญศรีจันทร์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:08:19.981811" elapsed="0.719408"/>
+</kw>
+<status status="PASS" start="2024-04-08T22:08:18.919779" elapsed="1.782439"/>
+</kw>
+<kw name="Click Submit Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:08:20.704220" level="INFO">Clicking element 'id=submitbtn'.</msg>
+<msg time="2024-04-08T22:08:21.965193" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T22:08:21.966191" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1369)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</msg>
+<arg>id=submitbtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-08T22:08:20.704220" elapsed="1.263976">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1369)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</kw>
+<status status="FAIL" start="2024-04-08T22:08:20.703221" elapsed="1.265974">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1369)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Must be in Thai only</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-08T22:08:21.970190" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-04-08T22:08:21.970190" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T22:08:00.408029" elapsed="21.563165">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1369)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</test>
+<test id="s1-t3" name="Check Invalid Name EN" line="33">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:08:21.994176" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T22:08:21.993178" elapsed="124.113210"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-08T22:10:26.127375" elapsed="0.231935"/>
+</kw>
+<kw name="Input Invalid EN Information">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:10:26.366308" level="INFO">Typing text 'Pimpakarn' into text field 'id=firstnameEng'.</msg>
+<arg>id=firstnameEng</arg>
+<arg>Pimpakarn</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:10:26.366308" elapsed="0.741574"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:10:27.108882" level="INFO">Typing text 'kucharoensrichan' into text field 'id=lastnameEng'.</msg>
+<arg>id=lastnameEng</arg>
+<arg>kucharoensrichan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:10:27.108882" elapsed="0.673808"/>
+</kw>
+<status status="PASS" start="2024-04-08T22:10:26.365307" elapsed="1.417383"/>
+</kw>
+<kw name="Click Submit Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:10:27.785688" level="INFO">Clicking element 'id=submitbtn'.</msg>
+<msg time="2024-04-08T22:10:30.815194" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T22:10:30.815194" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1369)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</msg>
+<arg>id=submitbtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-08T22:10:27.784690" elapsed="3.034502">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1369)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</kw>
+<status status="FAIL" start="2024-04-08T22:10:27.783689" elapsed="3.036504">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1369)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Must be in English only</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-08T22:10:30.824189" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-04-08T22:10:30.825188" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T22:08:21.991178" elapsed="128.837009">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1369)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</test>
+<test id="s1-t4" name="Check Invalid ID Card" line="41">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:10:30.958112" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T22:10:30.956115" elapsed="27.795206"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-08T22:10:58.753320" elapsed="0.231868"/>
+</kw>
+<kw name="Input Invalid ID Card">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:10:58.987187" level="INFO">Typing text 'A234567891234' into text field 'id=idCard'.</msg>
+<arg>id=idCard</arg>
+<arg>A234567891234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T22:10:58.987187" elapsed="0.699379"/>
+</kw>
+<status status="PASS" start="2024-04-08T22:10:58.986187" elapsed="0.700379"/>
+</kw>
+<kw name="Click Submit Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-08T22:10:59.687564" level="INFO">Clicking element 'id=submitbtn'.</msg>
+<msg time="2024-04-08T22:11:01.115883" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T22:11:01.115883" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1280)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</msg>
+<arg>id=submitbtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-08T22:10:59.687564" elapsed="1.430316">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1280)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</kw>
+<status status="FAIL" start="2024-04-08T22:10:59.687564" elapsed="1.431317">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1280)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>number only</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-08T22:11:01.122878" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-04-08T22:11:01.123877" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T22:10:30.946120" elapsed="30.178757">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (674, 1280)
+  (Session info: chrome=123.0.6312.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AAD57072+63090]
+	(No symbol) [0x00007FF6AACC2CC2]
+	(No symbol) [0x00007FF6AAB5EC65]
+	(No symbol) [0x00007FF6AABABB34]
+	(No symbol) [0x00007FF6AABA9954]
+	(No symbol) [0x00007FF6AABA7164]
+	(No symbol) [0x00007FF6AABA5EF9]
+	(No symbol) [0x00007FF6AAB9A708]
+	(No symbol) [0x00007FF6AABC6FDA]
+	(No symbol) [0x00007FF6AAB9A00A]
+	(No symbol) [0x00007FF6AABC71F0]
+	(No symbol) [0x00007FF6AABE3412]
+	(No symbol) [0x00007FF6AABC6D83]
+	(No symbol) [0x00007FF6AAB983A8]
+	(No symbol) [0x00007FF6AAB99441]
+	GetHandleVerifier [0x00007FF6AB1525CD+4238285]
+	GetHandleVerifier [0x00007FF6AB18F72D+4488493]
+	GetHandleVerifier [0x00007FF6AB187A0F+4456463]
+	GetHandleVerifier [0x00007FF6AAE305B6+953270]
+	(No symbol) [0x00007FF6AACCE58F]
+	(No symbol) [0x00007FF6AACC9264]
+	(No symbol) [0x00007FF6AACC939B]
+	(No symbol) [0x00007FF6AACB9BD4]
+	BaseThreadInitThunk [0x00007FFA60DA7344+20]
+	RtlUserThreadStart [0x00007FFA613226B1+33]
+</status>
+</test>
+<status status="FAIL" start="2024-04-08T22:07:41.543735" elapsed="199.594137"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="Form-React">Form-React</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
